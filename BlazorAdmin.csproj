@@ -1,4 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">	
+ <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Blazored.LocalStorage" />
 		<PackageReference Include="BlazorInputFile" />
@@ -12,6 +15,9 @@
 		<PackageReference Include="log4net" Version="1.2.10" /> <!-- Old version -->
 		<PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.3" />
+ <PackageReference Include="log4net" Version="1.2.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.3" />
 
 	</ItemGroup>
 
@@ -20,6 +26,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+
 		<Compile Update="Services\CatalogItem\Delete.EditCatalogItemResult.cs">
 			<DependentUpon>Delete.cs</DependentUpon>
 		</Compile>
